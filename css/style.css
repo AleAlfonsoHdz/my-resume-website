@@ -32,6 +32,32 @@ font-family: 'Heebo', sans-serif; */
       .bannerSection {
         padding: 150px 80px}}
 
+.hero__title {
+  font-family: var(--titleFont);
+  font-size: 3.2rem;   
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+  color: white !important;
+  text-shadow: 1px 1px 1px black;
+}
+
+.hero__tagline {
+  font-family: var(--titleFont);
+  font-size: clamp(1.1rem, 2vw + 0.4rem, 1.6rem);
+  font-weight: 500;           
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+  color: white !important;
+  text-shadow: 1px 1px 1px black;               
+  max-width: 45ch;            
+}
+
+.hero__description {
+  color: rgba(255,255,255,0.9);
+  text-shadow: 1px 1px 1px black;
+}
+
+
 .certificate{
   width: 30px;
   height: 30px;
@@ -103,17 +129,16 @@ a {
 a:hover {
   color: var(--primaryDarkColor);
 }
-a, .btn {
-  -webkit-transition: all 300ms ease-in-out 0s;
-  -o-transition: all 300ms ease-in-out 0s;
-  transition: all 300ms ease-in-out 0s;
-  text-decoration: none;}
-  
-.btn:hover{
-transform: translate(0px, -3px);
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-  transition-delay: 0.5s;
+a,
+.btn {
+  -webkit-transition: transform 180ms cubic-bezier(.33,1,.68,1), background-color 180ms ease-in-out, color 180ms ease-in-out;
+  -o-transition: transform 180ms cubic-bezier(.33,1,.68,1), background-color 180ms ease-in-out, color 180ms ease-in-out;
+  transition: transform 180ms cubic-bezier(.33,1,.68,1), background-color 180ms ease-in-out, color 180ms ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translate(0px, -3px);
 }
 .btn:focus {
   -webkit-box-shadow: none;
