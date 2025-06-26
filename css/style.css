@@ -160,6 +160,32 @@ a,
   text-decoration: none;
 }
 
+/* tidy icon + spacing */
+.btnIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  filter: grayscale(1) brightness(0);   /* makes icon match text colour */
+}
+
+.btnPrimary {
+  border: 1px solid rgba(0,0,0,.08);    
+  border-radius: 8px;                   
+  padding: 10px 26px;                   
+}
+
+.btnPrimary:hover {
+  background-color: #f3f3f3;            
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 8px rgba(0,0,0,.08);
+}
+
+.btnLinkedIn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .btn:hover {
   transform: translate(0px, -3px);
 }
